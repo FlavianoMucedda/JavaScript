@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>05-Arrays</title>
+</head>
+<body>
+  <script type="text/javascript">
+  /*Exercice : addition
+crée un tableau qui contient les valeurs suivantes : 1, 2, 3, 4, 5, 6, 7, 8, 9
+faire une boucle qui permet d'additioner toutes ces valeurs */
+
+let numero = [1 , 2, 3, 4, 5, 6, 7, 8, 9];
+let sum = 0;
+
+for (let i = 0 ; i < numero.length; sum += numero[i++]);
+
+console.log(sum);
+
+
+
+/* Exercice : Vos meilleurs choix
+crée un tableau qui contetient 3 nom d'acteurs
+Pour chaque acteur, afficher dans la console par exemple : "Le numero 1 est Stalone"
+Bonus:transformer en : "Le premier est Stalone", Le deuxième est Cruiz", etc... */
+
+
+let actor = ["Murray" , "Johansson", "Cruz"];
+let position = ["premier" , "deuxieme" , "troisieme"];
+let text1 = text2 = "";
+for (let i = 0; i < actor.length; i++) {
+  text1 += "Le numéro " + (i+1) + " est " + actor[i] + "\n";
+  text2 += "Le " + position[i] + " est " + actor[i] + "\n";
+
+}
+console.log(text1);
+console.log(text2);
+
+
+/*
+Exercice : clone
+crée un tableau qui contetient les valeurs suivantes : "Mario", "Luigi", "Peach"
+dupliquer le tableau et y ajouter "Bowser" */
+
+let nomPerso = ["mario", "luigi", "peach"]
+let nomPerso2 = [...nomPerso]
+
+nomPerso2.push("Bowser");
+
+console.log(nomPerso2);
+
+  </script>
+</body>
+</html>

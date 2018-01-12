@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+</head>
+<body>
+
+  <script type="text/javascript">
+
+/*  Exercices : Boucles
+Exercice : Pair et impair
+Ecrivez une boucle qui va itérer de 0 à 20.
+Pour chaque itération , il va vérifier si le nombre actuel est pair ou impair
+afficher dans la console par exemple : " 2 est pair " */
+
+let number=0;
+let result;
+for(i=0; i<=20; i++){
+   number = i % 2;
+   if (number === 0) result='pair';
+   else result=' impair';
+
+  console.log("Le nombre " + i + " est " + result);
+}
+
+
+/*
+Exercice : Multiplication Tables
+Écrire une boucle qui va itérer de 0 à 10
+Pour chaque itération de la boucle, il va multiplier le nombre de 9
+afficher dans la console le résultat par exemple : " 2 * 9 = 18". */
+
+let liste=0;
+for(i=1; i<=10; i++){
+   liste++;
+  console.log(liste + " * 9 = " + i * 9);
+}
+
+
+/*
+Exercice : assigner des grades
+Écrire une boucle qui va itérer de 0 à 100
+Écrire une fonction qui va retourner des grades selon les scores reçu
+si le score au dessus de 90 le grade est A
+si le score au dessus de 80 le grade est B
+si le score au dessus de 70 le grade est C
+si le score au dessus de 65 le grade est D
+si le score n'entre pas dans ces catégories le grade est F
+afficher dans la console le résultat par exemple : "Pour 82 points vous avez le grade B". */
+
+let point = 99;
+let grade;
+
+for (let i = 1; i <= 100; i++){
+  if (point >= 90) {
+    grade = "A";
+  } else if (point < 90 && point >= 80){
+    grade = "B";
+  } else if (point < 80 && point >= 70){
+    grade = "C";
+  } else if (point < 70 && point >= 65){
+    grade = "D";
+  } else {
+    grade = "E";
+  }
+}
+
+console.log("pour " + point + " points vous avez le grade " + grade);
+
+
+
+
+/* Exercice : pyramide
+Écrire une boucle qui va dessiner dans la console (ligne par ligne) le résulat suivant
+*
+* *
+* * *
+* * * *
+* * * * * */
+
+let pyramide = "";
+for (var i = 0; i <= 4; i++) {
+  pyramide = pyramide + " *";
+  console.log(pyramide);
+}
+
+
+  </script>
+
+</body>
+</html>
